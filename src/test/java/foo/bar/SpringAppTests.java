@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration("classpath:spring-config.xml")
 public class SpringAppTests {
     @Autowired
-    private EnglishHelloService helloService;
+    private HelloDaoImpl helloService;
 
     @Test
     public void testSayHello() {

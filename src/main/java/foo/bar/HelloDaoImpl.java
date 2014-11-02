@@ -3,9 +3,9 @@ package foo.bar;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EnglishHelloService implements IHelloService {
+public class HelloDaoImpl implements HelloDao {
     public String sayHello() {
-        return "Hello world!";
+        return "nihao!";
     }
 }
 

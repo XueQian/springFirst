@@ -12,7 +12,7 @@ public class HelloApp {
 //        HelloService helloService = new HelloService();
 //        System.out.print(helloService.sayHello());
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
-        IHelloService helloService = (IHelloService)context.getBean("service");
+        HelloDao helloService = (HelloDao)context.getBean("dao");
         System.out.println(helloService.sayHello());
     }
 
