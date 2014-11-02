@@ -15,6 +15,7 @@ public class HelloApp {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         HelloService helloService = (HelloService)context.getBean("service");
         helloService.service();
+        helloService.getItems();
     }
 
 }

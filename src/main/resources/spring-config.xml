@@ -10,10 +10,23 @@
         <!--<property name="dao" ref="dao"></property>-->
     <!--</bean>-->
 
+    <bean id="cocacola" class="foo.bar.entity.Item">
+        <property name="name" value="可口可乐"></property>
+    </bean>
+    <bean id="guiter" class="foo.bar.entity.Item">
+        <property name="name" value="吉他"></property>
+    </bean>
     <!--内部bean写法-->
     <bean id="service" class="foo.bar.service.HelloServiceImpl">
         <property name="dao">
-            <bean  class="foo.bar.dao.HelloDaoImpl" ></bean>
+            <bean class="foo.bar.dao.HelloDaoImpl" ></bean>
+        </property>
+        <property name="items">
+            <list>
+                <ref bean="cocacola"></ref>
+                <ref bean="guiter"></ref>
+            </list>
         </property>
     </bean>
- </beans>
+
+</beans>
