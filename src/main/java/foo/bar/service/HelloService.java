@@ -1,4 +1,4 @@
-package foo.bar;
+package foo.bar.service;
 
 /**
  * Created by xueqian on 11/2/14.

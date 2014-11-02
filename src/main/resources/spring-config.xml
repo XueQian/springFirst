@@ -6,12 +6,12 @@
     <context:annotation-config />
     <context:component-scan base-package="foo.bar"/>
     <!--<bean id="dao" class="foo.bar.dao.HelloDaoImpl" ></bean>-->
-    <!--<bean id="service" class="foo.bar.HelloServiceImpl">-->
+    <!--<bean id="service" class="foo.bar.service.HelloServiceImpl">-->
         <!--<property name="dao" ref="dao"></property>-->
     <!--</bean>-->
 
     <!--内部bean写法-->
-    <bean id="service" class="foo.bar.HelloServiceImpl">
+    <bean id="service" class="foo.bar.service.HelloServiceImpl">
         <property name="dao">
             <bean  class="foo.bar.dao.HelloDaoImpl" ></bean>
         </property>

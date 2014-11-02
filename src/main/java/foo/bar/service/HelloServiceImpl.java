@@ -1,6 +1,7 @@
-package foo.bar;
+package foo.bar.service;
 
 import foo.bar.dao.HelloDao;
+import foo.bar.service.HelloService;
 
 /**
  * Created by xueqian on 11/2/14.
