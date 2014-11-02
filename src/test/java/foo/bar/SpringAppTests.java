@@ -1,5 +1,6 @@
 package foo.bar;
 
+import foo.bar.dao.HelloDaoImpl;
 import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

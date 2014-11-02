@@ -1,5 +1,7 @@
 package foo.bar;
 
+import foo.bar.dao.HelloDao;
+
 /**
  * Created by xueqian on 11/2/14.
  */
