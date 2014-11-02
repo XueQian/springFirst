@@ -12,8 +12,8 @@ public class HelloApp {
 //        HelloService helloService = new HelloService();
 //        System.out.print(helloService.sayHello());
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
-        HelloDao helloService = (HelloDao)context.getBean("dao");
-        System.out.println(helloService.sayHello());
+        HelloService helloService = (HelloService)context.getBean("service");
+        helloService.service();
     }
 
 }

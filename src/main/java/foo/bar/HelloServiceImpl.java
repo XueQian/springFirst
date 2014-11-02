@@ -6,6 +6,7 @@ package foo.bar;
 public class HelloServiceImpl implements HelloService {
     private HelloDao helloDao;
 
+    @Override
     public void service(){
         System.out.println(helloDao.sayHello());
     }
