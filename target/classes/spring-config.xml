@@ -5,8 +5,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config />
     <context:component-scan base-package="foo.bar"/>
-    <bean id="dao" class="foo.bar.HelloDaoImpl" ></bean>
+    <!--<bean id="dao" class="foo.bar.HelloDaoImpl" ></bean>-->
+    <!--<bean id="service" class="foo.bar.HelloServiceImpl">-->
+        <!--<property name="dao" ref="dao"></property>-->
+    <!--</bean>-->
+
+    <!--内部bean写法-->
     <bean id="service" class="foo.bar.HelloServiceImpl">
-        <property name="dao" ref="dao"></property>
+        <property name="dao">
+            <bean  class="foo.bar.HelloDaoImpl" ></bean>
+        </property>
     </bean>
  </beans>
